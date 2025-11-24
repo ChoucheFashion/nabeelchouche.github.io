@@ -1,0 +1,32 @@
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 10px;
+}
+
+.gallery img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+  transition: transform 0.3s;
+}
+
+.gallery img:hover {
+  transform: scale(1.05);
+}
+
+.lb-close, .lb-prev, .lb-next {
+  background-color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.lb-image {
+  max-width: 90%;
+  max-height: 90%;
+}
+
+:focus {
+  outline: 3px solid blue;
+}
